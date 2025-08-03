@@ -1,0 +1,33 @@
+@use "./variables";
+@use "./reset";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        padding-top: 20px;
+    }
+    .container {
+        max-width: 335px;
+    }
+    
+}

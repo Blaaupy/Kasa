@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 210px;
+      height: 68px;
+    }
+
+    nav {
+      display: flex;
+      gap: 57px;
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  header{
+    .container {
+      img {
+        width: 145px;
+        height: 47px;
+      }
+      nav {
+        gap: 26px;
+        
+        a {
+          font-size: 12px;
+        }
+      }
+      
+    }
+  }
+}
