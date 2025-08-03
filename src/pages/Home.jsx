@@ -1,3 +1,11 @@
+import { CardsGeneration } from "../components/CardsGenerationHomePage"
+import { FirstDivHomePage } from "../components/FirstDivHomePage"
+import "../styles/main.scss"
+
+
 export default function Home() {
-  return <h1>Page d’accueil</h1>;
+  return (<div className="page">
+    <FirstDivHomePage /> 
+    <CardsGeneration />
+  </div>)
 }

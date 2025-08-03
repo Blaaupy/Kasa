@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        grid-template-rows: auto;
+        padding: 50px;
+        background-color:rgba(246, 246, 246, 1); 
+        border-radius: 25px;
+    }
+
+    article {
+        position: relative;
+        img {
+            width: 340px;
+            height: 340px;
+            border-radius: 15px;
+        }
+    }
+
+    h2 {
+        position: absolute;
+        width: 300px;
+        height: 52px;
+        top: 268px;
+        left: 20px;
+        z-index: 2;
+        color:white;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+}
