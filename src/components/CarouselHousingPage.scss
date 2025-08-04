@@ -14,18 +14,18 @@
 
 .carouselArrow {
     position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
+    align-items: center;
+    width: 47px;
+    height: 80px;
     cursor: pointer;
     z-index: 2;
 
     &.left {
-        left: 10px;
+        left: 20px;
     }
 
     &.right {
-        right: 10px;
+        right: 20px;
     }
 }
 
