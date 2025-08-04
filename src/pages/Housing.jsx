@@ -1,3 +1,8 @@
-export default function Home() {
-  return <h1>Page d’accueil</h1>;
+import CarouselHousingPage from "../components/CarouselHousingPage";
+
+export default function HousingPage() {
+  return (<>
+    <CarouselHousingPage />
+  
+  </>);
 }
