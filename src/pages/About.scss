@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    .containerAbout {
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.3) ;
+        border-radius: 25px;
+
+        img {
+            width: 100%;
+            height: 223px;
+            object-fit: cover;
+            border-radius: 25px;
+            mix-blend-mode: darken;
+        }
+    }
+
+    
+}

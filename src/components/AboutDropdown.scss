@@ -1,0 +1,94 @@
+.dropDownGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 108px;
+
+    .dropDownCard {
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgba(255, 96, 96, 1);
+        overflow: hidden;
+
+        .TopBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        p {
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .ArrowBack {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.3s ease;
+            &.rotate {
+            transform: rotate(-180deg);
+            }
+        }
+        }
+
+        .dropDownCardDescription {
+            background-color: ghostwhite;
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            &.open {
+                animation: fadeIn 0.3s ease forwards;
+            }
+
+            /* Animation pour la fermeture : fadeOut sur 0.15s */
+            &.closing {
+                animation: fadeOut 0.15s ease forwards;
+            }
+        }
+
+        .dropDownCardDescription.open {
+            max-height: 500px;
+            opacity: 1;
+            padding: 20px;
+        }
+    }
+}
+// Animation d'ouverture : apparition + décalage vers le bas
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: translateY(0);
+  }
+}
+
+// Animation de fermeture : disparition + remontée
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    max-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transform: translateY(-5px);
+  }
+}
+
