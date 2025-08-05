@@ -1,8 +1,8 @@
 import { Navigate, useParams } from "react-router-dom"
-import data from "../data/logements.json"
+import data from "../../data/logements.json"
 import "./CarouselHousingPage.scss"
-import ArrowNext from "../images/Arrow_Next.png"
-import ArrowPrev from "../images/Arrow_Prev.png"
+import ArrowNext from "../../images/Arrow_Next.png"
+import ArrowPrev from "../../images/Arrow_Prev.png"
 import { useState } from "react"
  
 

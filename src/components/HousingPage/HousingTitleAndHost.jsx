@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import data from "../data/logements.json"
+import data from "../../data/logements.json"
 import "./HousingTitleAndHost.scss"
 
 export default function HousingTitleAndHost(){

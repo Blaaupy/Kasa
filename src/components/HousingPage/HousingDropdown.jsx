@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./HousingDropdown.scss";
-import data from "../data/logements.json";
+import data from "../../data/logements.json";
 import { useParams } from "react-router-dom";
 import Arrow from "../images/Arrow_Back.png";
 

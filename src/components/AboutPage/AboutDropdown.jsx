@@ -1,4 +1,4 @@
-import AboutData from "../data/AboutData.json"
+import AboutData from "../../data/AboutData.json"
 import "./AboutDropDown.scss"
 import Arrow from "../images/Arrow_Back.png"
 import { useState } from "react"
