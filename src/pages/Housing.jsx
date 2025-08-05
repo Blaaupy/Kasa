@@ -6,7 +6,9 @@ import "./Housing.scss"
 export default function HousingPage() {
   return (<div className="housingPage">
     <CarouselHousingPage />
-    <HousingDropdown />
     <HousingTagsAndStars />
+    <HousingDropdown />
+
+    
   </div>);
 }
