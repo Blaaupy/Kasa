@@ -9,7 +9,7 @@ export default function HousingDropdown() {
   const logement = data.find((item) => item.id === id);
 
   return (
-    <div className="dropDownGrid container">
+    <div className="housingDropDownGrid container">
       <div className="dropDownWrapper">
         <DropdownCard title="Description" content={logement.description} />
       </div>

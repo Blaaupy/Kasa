@@ -1,9 +1,12 @@
-.dropDownGrid {
+.housingDropDownGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 76px;
   grid-template-rows: 1fr;
   padding: 0;
+  .dropDownCard {
+    border-radius: 10px;
+  }
 }
 
 .dropDownWrapper {

@@ -5,57 +5,59 @@
     gap: 30px;
     padding: 0 108px;
 
-    .dropDownCard {
-        width: 100%;
-        border-radius: 5px;
-        background-color: rgba(255, 96, 96, 1);
-        overflow: hidden;
-
-        .TopBar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        cursor: pointer;
-
-        p {
-            color: white;
-            font-size: 21px;
-            font-weight: bold;
-        }
-
-        .ArrowBack {
-            width: 32px;
-            height: 32px;
-            transition: transform 0.3s ease;
-            &.rotate {
-            transform: rotate(-180deg);
-            }
-        }
-        }
-
-        .dropDownCardDescription {
-            background-color: rgba(246, 246, 246, 1);
-            max-height: 0;
-            overflow: hidden;
-            padding: 0 20px;
-            &.open {
-                animation: fadeIn 0.3s ease forwards;
-            }
-
-            /* Animation pour la fermeture : fadeOut sur 0.15s */
-            &.closing {
-                animation: fadeOut 0.15s ease forwards;
-            }
-        }
-
-        .dropDownCardDescription.open {
-            max-height: 500px;
-            opacity: 1;
-            padding: 20px;
-        }
-    }
 }
+.dropDownCard {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(255, 96, 96, 1);
+  overflow: hidden;
+
+  .TopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  p {
+      color: white;
+      font-size: 21px;
+      font-weight: bold;
+  }
+
+  .ArrowBack {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+      &.rotate {
+      transform: rotate(-180deg);
+      }
+  }
+  }
+
+  .dropDownCardDescription {
+      background-color: rgba(246, 246, 246, 1);
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      &.open {
+          animation: fadeIn 0.3s ease forwards;
+      }
+
+      /* Animation pour la fermeture : fadeOut sur 0.15s */
+      &.closing {
+          animation: fadeOut 0.15s ease forwards;
+      }
+  }
+
+  .dropDownCardDescription.open {
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px;
+  }
+}
+
+
 // Animation d'ouverture : apparition + décalage vers le bas
 @keyframes fadeIn {
   from {
