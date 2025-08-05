@@ -1,0 +1,10 @@
+.dropDownGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 76px;
+  grid-template-rows: 1fr;
+}
+
+.dropDownWrapper {
+  width: 100%;
+}
