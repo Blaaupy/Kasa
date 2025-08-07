@@ -1,10 +1,9 @@
-import { useParams } from "react-router-dom"
-import data from "../../data/logements.json"
-import "./HousingTitleAndHost.scss"
+import "./HousingTitleAndHost.scss";
+import { useFindLogement } from "./FindId";
 
 export default function HousingTitleAndHost(){
-    const {id} =  useParams();
-    const logement = data.find((item) => item.id === id);
+    const logement = useFindLogement();
+    if (!logement) return null;
 
     return (<div className="container housingTitleHost">
         <div className="housingTitle">

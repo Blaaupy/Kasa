@@ -1,11 +1,10 @@
 import "./HousingDropdown.scss";
-import data from "../../data/logements.json";
-import { useParams } from "react-router-dom";
 import { DropdownCard } from "../DropDown";
+import { useFindLogement } from "./FindId";
 
 export default function HousingDropdown() {
-  const { id } = useParams();
-  const logement = data.find((item) => item.id === id);
+  const logement = useFindLogement();
+  if (!logement) return null;
 
   return (
     <div className="housingGrid container">

@@ -1,15 +1,12 @@
-import { useParams } from "react-router-dom";
-import data from "../../data/logements.json";
 import "./HousingTagsAndStars.scss";
 import fullStar from "../../images/Full_Star.png"
 import emptyStar from "../../images/Empty_Star.png"
+import { useFindLogement } from "./FindId";
 
 export default function HousingTagsAndStars() {
-  const { id } = useParams();
-  const logement = data.find((item) => item.id === id);
-
-  if (!logement) {
-    return <p>Logement introuvable</p>;
+  const logement = useFindLogement();
+  if (!logement || !logement.tags || !logement.rating) {
+    return null;
   }
 
   return (

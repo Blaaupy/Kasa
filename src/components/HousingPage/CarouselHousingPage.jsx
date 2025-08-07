@@ -1,24 +1,18 @@
-import { Navigate, useParams } from "react-router-dom"
-import data from "../../data/logements.json"
 import "./CarouselHousingPage.scss"
 import ArrowNext from "../../images/Arrow_Next.png"
 import ArrowPrev from "../../images/Arrow_Prev.png"
 import { useState } from "react"
+import { useFindLogement } from "./FindId";
  
 
 export default function CarouselHousingPage() {
 
-    const {id} =  useParams();
-    const logement = data.find((item) => item.id === id);
+    const logement = useFindLogement();
     const [currentImage, setCurrentImage] = useState(0);
-    
-    if (!logement) {
-        return <Navigate to="*" />
-    };
+    if (!logement) return null;
 
+    
     const pictures = logement.pictures;
-
-    
 
     const handlePrev = () => {
         setCurrentImage((prevIndex) => 

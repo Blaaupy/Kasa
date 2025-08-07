@@ -5,7 +5,7 @@ import HousingTitleAndHost from "../components/HousingPage/HousingTitleAndHost";
 import "./Housing.scss"
 
 export default function HousingPage() {
-  return (<div className="housingPage">
+  return (<div className="housingPage page container">
     <CarouselHousingPage />
     <HousingTitleAndHost />
     <HousingTagsAndStars />
