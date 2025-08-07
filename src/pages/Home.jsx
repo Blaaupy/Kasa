@@ -1,5 +1,5 @@
-import { CardsGeneration } from "../components/CardsGenerationHomePage"
-import { FirstDivHomePage } from "../components/FirstDivHomePage"
+import { CardsGeneration } from "../components/HomePage/CardsGenerationHomePage"
+import { FirstDivHomePage } from "../components/HomePage/FirstDivHomePage"
 import "../styles/main.scss"
 
 

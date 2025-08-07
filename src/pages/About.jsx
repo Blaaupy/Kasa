@@ -1,4 +1,4 @@
-import AboutDropDown from "../components/AboutDropdown";
+import AboutDropDown from "../components/AboutPage/AboutDropdown";
 import logo from "../images/Background_About_Page.png"
 import "./About.scss"
 

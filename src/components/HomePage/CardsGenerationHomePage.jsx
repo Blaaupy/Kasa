@@ -1,6 +1,6 @@
 import logements from "../../data/logements.json"
 import "./CardsGenerationHomePage.scss"
-import "../styles/main.scss"
+import "../../styles/main.scss"
 import { useNavigate } from "react-router-dom"
 
 export function CardsGeneration() {

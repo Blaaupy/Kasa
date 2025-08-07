@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import data from "../../data/logements.json";
 import "./HousingTagsAndStars.scss";
-import fullStar from "../images/Full_Star.png"
-import emptyStar from "../images/Empty_Star.png"
+import fullStar from "../../images/Full_Star.png"
+import emptyStar from "../../images/Empty_Star.png"
 
 export default function HousingTagsAndStars() {
   const { id } = useParams();

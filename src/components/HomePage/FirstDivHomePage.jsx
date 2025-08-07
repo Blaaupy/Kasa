@@ -1,7 +1,6 @@
-import ImageBackground from "../images/Background_home_page.png"
+import ImageBackground from "../../images/Background_home_page.png"
 import "./FirstDivHomePage.scss"
-import "../styles/main.scss"
-import "../styles/main.scss"
+import "../../styles/main.scss"
 
 
 export function FirstDivHomePage() {
