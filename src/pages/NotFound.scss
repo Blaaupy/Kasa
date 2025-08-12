@@ -4,14 +4,12 @@
     font-weight: bold;
     color: rgba(255, 96, 96, 1);
     text-align: center;
-    margin-bottom: 139px;
 }
 
 .notFoundTitle {
     color: rgba(255, 96, 96, 1);
     font-size: 36px;
     text-align: center;
-    margin-bottom: 139px;
     font-weight: 500;
 }
 
@@ -19,5 +17,28 @@
     text-align: center;
     font-size: 19px;
     text-decoration: 1px underline;
-    margin-bottom: 89px;
+    margin-bottom: 50px;
+}
+
+.div404 {
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+@media (max-width: 375px) {
+    .p404 {
+        width: 198px;
+        height: 99px;
+        font-size: 96px;
+    }
+
+    .notFoundTitle {
+        font-size: 18px;
+        max-width: 260px;
+    }
+
+    .linkToHomePage {
+        font-size: 14px;
+    }
 }
