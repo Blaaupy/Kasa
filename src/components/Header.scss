@@ -1,31 +1,27 @@
-header {
-  display: flex;
-  
-  .container {
+.containerHeader {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  img {
+    width: 210px;
+    height: 68px;
+    border-radius: 0px;
+  }
+
+  nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-    img {
-      width: 210px;
-      height: 68px;
-      border-radius: 0px;
-    }
-
-    nav {
-      display: flex;
-      gap: 57px;
-      a {
-        font-size: 24px;
-      }
+    gap: 57px;
+    a {
+      font-size: 24px;
     }
   }
 }
 
+
 @media (max-width: 375px) {
   header{
-    .container {
+    .containerHeader {
       img {
         width: 145px;
         height: 47px;

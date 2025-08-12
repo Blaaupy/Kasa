@@ -1,0 +1,21 @@
+.stars {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.star {
+    height: 25px;
+    width: 25px;
+}
+
+@media (max-width: 375px) {
+    .star {
+        height: 18px;
+        width: 18px;
+    }
+    .stars {
+        gap: 10px;
+    }
+}

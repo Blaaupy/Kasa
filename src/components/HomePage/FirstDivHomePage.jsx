@@ -5,7 +5,7 @@ import "../../styles/main.scss"
 
 export function FirstDivHomePage() {
     return (<section className="container">
-        <div className="container">
+        <div className="container imgContainer firstDivHomePage">
             <img src={ImageBackground} alt="Image de fond au titre de la home page du site Kasa"></img>
             <h1>Chez vous, partout et ailleurs</h1>
         </div>

@@ -1,0 +1,27 @@
+.housingHost {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    color: rgba(255, 96, 96, 1);
+    text-align: center;
+    gap: 10px;
+    font-weight: 500;
+
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .housingHost {
+        font-size: 12px;
+        text-align: end;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

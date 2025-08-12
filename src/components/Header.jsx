@@ -6,7 +6,7 @@ import "../styles/main.scss"
 export function Header() {
     return (
         <header>
-            <div className="container">
+            <div className="container containerHeader">
                 <img src={logo} alt="Logo de l'agence immoblière Kasa"></img>
                 <nav>
                     <Link to="/">Accueil</Link>

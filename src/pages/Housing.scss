@@ -1,3 +1,35 @@
 .housingPage {
     gap: 30px;
 }
+
+.housingTitleHost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.housing-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.housingTitleTags {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+
+@media (max-width: 375px) {
+    .housingPage {
+        gap: 20px;
+    }
+
+    .housing-info {
+        justify-content: flex-start;
+    }
+}

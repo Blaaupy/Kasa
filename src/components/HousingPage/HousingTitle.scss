@@ -1,0 +1,27 @@
+.housingTitle {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.housingH1 {
+    color: rgba(255, 96, 96, 1);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+@media (max-width: 375px) {
+    .housingH1 {
+        font-size: 18px;
+    }
+
+    .housingTitle {
+        p {
+            font-size: 14px;
+        }
+    }
+}

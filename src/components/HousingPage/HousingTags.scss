@@ -1,0 +1,23 @@
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 375px) {
+    .tag {
+        font-size: 10px;
+        border-radius: 5px;
+        height: 18px;
+    }
+}

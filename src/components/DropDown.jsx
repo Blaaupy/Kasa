@@ -35,11 +35,11 @@ export function DropdownCard({ title, content, type = "text" }) {
           (type === "list" ? (
             <ul>
               {content.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li className="descriptionText" key={index}>{item}</li>
               ))}
             </ul>
           ) : (
-            <p>{content}</p>
+            <p className="descriptionText">{content}</p>
           ))
         }
       </div>

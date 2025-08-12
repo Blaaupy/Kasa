@@ -24,6 +24,9 @@ footer {
 @media (max-width: 375px) {
     footer {
         p {
+            max-width: 125px;
+            white-space: normal;
+            text-align: center;
             margin: 0;
             font-size: 12px;
         }
