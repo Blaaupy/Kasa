@@ -2,6 +2,8 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 0px;
+  padding-top: 0px;
 
   img {
     width: 210px;
@@ -12,6 +14,7 @@
   nav {
     display: flex;
     gap: 57px;
+    align-items: center;
     a {
       font-size: 24px;
     }
@@ -19,7 +22,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 572px) {
   header{
     .containerHeader {
       img {
@@ -30,10 +33,35 @@
         gap: 26px;
         
         a {
+          font-size: 17px;
+        }
+      }
+      
+    }
+  }
+}
+
+@media (max-width: 375px){
+  header {
+    .containerHeader {
+      nav {
+        a {
           font-size: 12px;
         }
       }
       
+    }
+  }
+  
+}
+
+@media (max-width: 335px) {
+  header {
+    .containerHeader {
+      gap: 0px;
+      nav {
+        gap: 15px;
+      }
     }
   }
 }

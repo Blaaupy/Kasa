@@ -3,8 +3,8 @@ import logo from "../images/Background_About_Page.png"
 import "./About.scss"
 
 export default function AboutPage() {
-  return <div className="container aboutPage">
-    <div className="imgContainer">
+  return <div className="page aboutPage">
+    <div className="container imgContainer">
       <img src={logo} alt="Image de fond de la About page du site Kasa" />
     </div>
     <AboutDropDown />

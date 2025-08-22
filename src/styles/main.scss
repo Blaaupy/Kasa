@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  padding: 50px 100px;
 }
 
 .container {
@@ -37,19 +38,27 @@ body {
         mix-blend-mode: darken;
     }
 }
+@media (max-width: 1254px){
+    .page {
+        padding: 50px 50px;
+    }
+}
 
+@media (max-width: 768px) {
+    .page {
+        gap: 40px;
+        padding: 35px 35px;
+    }
+}
 
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 459px) {
     body {
         padding-top: 20px;
     }
 
     .page {
         gap: 27px;
-    }
-
-    .container {
-        max-width: 335px;
+        padding: 22px 20px;
     }
     
     .imgContainer{
