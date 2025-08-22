@@ -24,12 +24,12 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .housingPage {
         gap: 20px;
     }
 
     .housing-info {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 }

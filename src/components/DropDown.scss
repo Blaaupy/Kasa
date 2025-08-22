@@ -84,23 +84,6 @@
   }
 }
 
-@media (max-width: 375px) {
-  .TopBar  {
-    padding: 5px 10px;
-    p {
-      font-size: 13px;
-    }
-    .ArrowBack {
-      width: 16px;
-      height: 16px;
-      align-items: center;
-    }
-
-    
-  }
-  .descriptionText {
-    font-size: 13px;
-  }
 
   // Animation d'ouverture
   @keyframes fadeIn {
@@ -137,4 +120,33 @@
       transform: translateY(-5px);
     }
   }
+
+
+@media (max-width: 768px) {
+  .TopBar{
+    padding: 2px 10px;
+    p {
+      font-size: 17px;
+    }
+  }
 }
+
+@media (max-width: 375px) {
+  .TopBar  {
+    padding: 5px 10px;
+    p {
+      font-size: 13px;
+    }
+    .ArrowBack {
+      width: 16px;
+      height: 16px;
+      align-items: center;
+    }
+
+    
+  }
+  .descriptionText {
+    font-size: 13px;
+  }
+}
+

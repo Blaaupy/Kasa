@@ -7,7 +7,7 @@ export default function HousingDropdown() {
   if (!logement) return null;
 
   return (
-    <div className="housingGrid container">
+    <div className="housingGrid page">
       <div className="dropDownWrapper">
         <DropdownCard title="Description" content={logement.description} />
       </div>

@@ -40,6 +40,21 @@
     z-index: 2;
 }
 
+
+@media (max-width: 768px) {
+    .carouselImage {
+        height: 300px;
+        border-radius: 10px;
+    }
+    .carouselArrow {
+        width: 20px;
+        height: 40px;
+    }
+    .carouselCounter {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 375px) {
     .carouselImage {
         height: 225px;

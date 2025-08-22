@@ -24,10 +24,10 @@ function useWindowWidth() {
 
 export default function HousingPage() {
   const width = useWindowWidth();
-  const isSmallScreen = width <= 375;
+  const isSmallScreen = width <= 768;
 
   return (
-    <div className={`housingPage page container ${isSmallScreen ? "small-screen" : ""}`}>
+    <div className={`housingPage page  ${isSmallScreen ? "small-screen" : ""}`}>
       <CarouselHousingPage />
       
       {isSmallScreen ? (
