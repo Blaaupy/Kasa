@@ -4,7 +4,14 @@
   gap: 30px;
   padding: 0 108px;
 }
-@media (max-width: 375px) {
+
+@media (max-width: 1254px){
+    .aboutGrid {
+      padding: 0 54px;
+    }
+}
+
+@media (max-width: 768px) {
   .aboutGrid {
     padding: 0px;
     gap: 20px;
