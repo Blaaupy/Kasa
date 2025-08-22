@@ -26,16 +26,24 @@
     gap: 100px;
 }
 
+@media (max-width: 655px){
+    .p404 {
+        height: 250px ;
+        font-size: 190px;
+    }
+    .div404 {
+        gap: 50px;
+    }
+}
+
 @media (max-width: 375px) {
     .p404 {
-        width: 198px;
         height: 99px;
         font-size: 96px;
     }
 
     .notFoundTitle {
         font-size: 18px;
-        max-width: 260px;
     }
 
     .linkToHomePage {

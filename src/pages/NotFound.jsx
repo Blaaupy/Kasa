@@ -3,7 +3,7 @@ import "./NotFound.scss"
 
 export default function NotFoundPage() {
   return (
-  <div className="container div404">
+  <div className="page div404">
     
       <p className="p404">404</p>
     
